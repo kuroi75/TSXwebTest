@@ -1,0 +1,31 @@
+.custom-logo {
+    width: 50px;
+    height: auto;
+}
+
+.hero-figure-box-05 {
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.feature-logo {
+    margin: 0 auto;
+}
+
+.pricing-table.first-table {
+    z-index: 999 !important;
+}
+
+.pricing-table::before {
+    display: none !important;
+}
+
+.pricing-table {
+    width: 500px;
+    max-width: 500px;
+}
+
+.pricing-tables-wrap {
+    justify-content: space-evenly;
+}
