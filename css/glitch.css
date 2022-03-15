@@ -1,0 +1,66 @@
+.icon-list{
+    display: flex;
+    position: relative;
+    margin-right: 1.5rem;
+}
+.icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.icon-front{
+    color: var(--foreground-color);
+    z-index: 1;
+}
+.icon-pink{
+    color: rgb(233, 164, 176);
+    pointer-events: none;
+}
+.icon-blue{
+    color: rgb(90, 224, 241);
+    pointer-events: none;
+}
+
+.icon-front:hover~.icon-blue{
+    animation: blue_animate .3s infinite;
+}
+.icon-front:hover~.icon-pink{
+    animation: pink_animate .3s infinite;
+}
+
+@keyframes pink_animate{
+    25% {
+        top: var(--glitch-pos);
+        left: 0%;
+    }
+    50%{
+        top: 0%;
+        left: var(--glitch-neg);
+    }
+    75%{
+        top: var(--glitch-neg);
+        left: 0%;
+    }
+    100%{
+        top: 0%;
+        left: var(--glitch-pos);
+    }
+}
+
+@keyframes blue_animate{
+    25%{
+        top: var(--glitch-neg);
+    }
+    50%{
+        top: var(--glitch-pos);
+        left: 0%;
+    }
+    75%{
+        top: 0%;
+        left: var(--glitch-pos);
+    }
+    100%{
+        top: 0%;
+        left: var(--glitch-neg);
+    }
+}

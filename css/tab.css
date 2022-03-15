@@ -1,0 +1,14 @@
+.search-item input{
+    display: none;
+}
+.items{
+    margin-left:.25rem ;
+    margin-right:.25rem ;
+}
+.item{
+    margin: 0 .5rem;
+    padding: .5rem;
+}
+.team{
+    left: -5px;
+}
